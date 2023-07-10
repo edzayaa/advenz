@@ -1,0 +1,22 @@
+.elementor-8357 .elementor-element.elementor-element-8cd952c .ct-heading .item--title{font-family:"PPNeueMontreal", Sans-serif;margin-bottom:0px;}.elementor-8357 .elementor-element.elementor-element-8cd952c .ct-heading .item--sub-title{margin-bottom:9px;}.elementor-8357 .elementor-element.elementor-element-7911c57{font-family:"PPNeueMontreal", Sans-serif;}.elementor-8357 .elementor-element.elementor-element-faece73 .ct-heading{text-align:center;}.elementor-8357 .elementor-element.elementor-element-faece73 .ct-heading .item--title{font-family:"PPNeueMontreal", Sans-serif;margin-bottom:0px;}.elementor-8357 .elementor-element.elementor-element-faece73 .ct-heading .item--sub-title{margin-bottom:9px;}.elementor-8357 .elementor-element.elementor-element-a236112 .ct-fancy-box-grid .item--icon i{color:var( --e-global-color-424c82cd );}.elementor-8357 .elementor-element.elementor-element-a236112 .ct-fancy-box-grid .item--icon svg{fill:var( --e-global-color-424c82cd );}.elementor-8357 .elementor-element.elementor-element-a236112 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}@media(max-width:1240px){.elementor-8357 .elementor-element.elementor-element-a236112 > .elementor-widget-container{padding:0px 0px 0px 0px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('http://localhost/wordpress/wp-content/uploads/2023/03/6356b9816ed7636608a7cb25_PPNeueMontreal-Medium-1.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('http://localhost/wordpress/wp-content/uploads/2023/03/6356b981583d410c7992d51e_PPNeueMontreal-Regular-2.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('http://localhost/wordpress/wp-content/uploads/2023/03/6356b981e3a3e65b27abcdce_PPNeueMontreal-Semibold-2.woff2') format('woff2');
+}
+/* End Custom Fonts CSS */

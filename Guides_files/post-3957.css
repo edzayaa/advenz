@@ -1,0 +1,22 @@
+.elementor-kit-3957{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-color-424c82cd:#4054B2;--e-global-color-5faceb82:#23A455;--e-global-color-4afa9fbf:#000;--e-global-color-1955007d:#FFF;--e-global-typography-primary-font-family:"Ppneuemontreal";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Ppneuemontreal";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Ppneuemontreal";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Ppneuemontreal";--e-global-typography-accent-font-weight:500;--e-global-typography-8ec48eb-font-family:"Ppneuemontreal";font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 a{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 a:hover{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h1{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h2{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h3{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h4{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h5{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 h6{font-family:"PPNeueMontreal", Sans-serif;}.elementor-kit-3957 button,.elementor-kit-3957 input[type="button"],.elementor-kit-3957 input[type="submit"],.elementor-kit-3957 .elementor-button{font-family:"PPNeueMontreal", Sans-serif;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-bottom:20px;}.elementor-element{--widgets-spacing:20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-kit-3957 e-page-transition{background-color:#FFBC7D;}@media(max-width:1240px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1240px;}.e-con{--container-max-width:1240px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('../fonts/6356b9816ed7636608a7cb25_PPNeueMontreal-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('../fonts/6356b981583d410c7992d51e_PPNeueMontreal-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PPNeueMontreal';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('../fonts/6356b981e3a3e65b27abcdce_PPNeueMontreal-Semibold.woff2') format('woff2');
+}
+/* End Custom Fonts CSS */

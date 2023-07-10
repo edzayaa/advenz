@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.c-reel{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.spacer{
+    position: relative;
+    top: -30%;
+    width: 100%;
+}
+
+.start{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 25%;
+
+}
+
+.scroll{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+  
+#scroll{
+    animation: animateHeight 1.4s linear .3s 4;
+}
+  
+#circle--shape{
+    animation: animateShape 1.6s ease-in-out infinite
+}
+  
+@keyframes animateShape{
+   50%{
+        cy: 50;
+        opacity: .1;
+    } 
+}
+    
+@keyframes animateHeight{
+    70%{
+        height: 105px
+    }
+}
+/*
+.spacer{
+    width: 30%;
+    height: 26300px;
+}
+      */

@@ -1,0 +1,90 @@
+.elementor-element-1632c56 .slick-track{
+width:100% !important;
+}
+
+.elementor-heading-title{
+	color:#083553 !important;
+}
+
+@media screen and (min-width: 0px){
+.carousel-item {
+width:100% !important;
+}	
+}
+
+
+@media screen and (min-width: 641px){
+.carousel-item {
+width:50% !important;
+}
+}
+
+@media screen and (min-width: 996px){
+.carousel-item {
+width:50% !important;
+}
+}
+
+
+@media screen and (max-width: 1239px){
+
+}
+
+@media screen and (min-width: 997px){
+.carousel-item {
+width:33.333333% !important;
+}
+}
+
+
+@media screen and (min-width: 1500px){
+.site-footer-custom .container {
+width:100% !important;
+max-width:100% !important;
+}
+}
+
+#content{
+	margin-bottom: 0 !important;
+}
+
+.menu-resources{
+margin-top:30px;
+list-style:none !important;
+text-align:center;
+}
+
+.menu-resources ul li {
+display:inline-block;
+}
+
+.menu-resources ul li a{
+color:#343232;
+font-size: 25px;
+font-weight: 700;
+margin-right:40px;
+}
+
+
+.menu-resources .link-2 a {
+  color: #083553;
+  text-decoration: underline;
+  text-decoration-color: #083553;
+  text-decoration-style: solid;
+  height:3px
+}
+
+ .link-2 a:after {
+  content: '';
+  border-bottom: solid 1px #083553;
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  opacity: 1;
+  
+}
+
+.link-2 a:before {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
