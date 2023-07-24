@@ -2141,8 +2141,7 @@ body.body-default-font {
 .site_section {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content:start;
   align-items: center;
 }
 
@@ -33091,7 +33090,7 @@ body #bbpress-forums .bbp-forum-freshness a:hover {
   overflow: hidden;
 }
 .site-content {
-  padding-top: 160px;
+  padding-top: 1em;
   position: relative;
 }
 @media screen and (max-width: 1199px) {
@@ -36157,7 +36156,8 @@ body:not(.elementor-editor-active) .ct-slick-slider {
   margin-bottom: 0;
 }
 .elementor .elementor-section.elementor-section-boxed > .elementor-container.elementor-column-gap-default {
-  max-width: 1190px;
+  width: 100vw !important;
+  max-width: 100vw!important;
 }
 .elementor .elementor-section.elementor-section-boxed > .elementor-container.elementor-column-gap-extended {
   max-width: 1200px;

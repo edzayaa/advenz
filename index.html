@@ -26,6 +26,29 @@
   padding: 0.3em 0rem;
 }
 
+.first-title-video{
+    opacity: 0;
+    animation: desvanecer 6s  ease-in-out;
+    animation-delay: 2.8s;
+}
+
+.second-title-video{
+    opacity: 1;
+    animation: desvanecer 8s  ease alternate-reverse;
+    animation-delay: 3.3s;
+}
+
+@keyframes desvanecer{
+    0%{opacity: 1;}
+25%{opacity: 0.75;}
+50%{opacity: 0.5;}
+75%{opacity: 0.25;}
+100%{opacity: 0;}
+}
+
+
+
+
     </style>
     <body class="c-body">
         <div class="c-global-css w-embed"></div>
@@ -64,16 +87,13 @@
                                 </div>
                             </div>
                             <div typed="" class="t-micro-3 is-grey100"></div>
-                            <div typed="" class="t-micro-3 is-grey100 hide">Class wireless
-                                <br/>create element()
-                                <br/>{  
-                                <br/>   renderSquare(i) {
-                                <br/>    return &lt;value={i}/&gt;;
-                                <br/>   }
-                                <br/>}
-                                <br/>
-                                <br/>{this.props.value}
-                                <br/>Return (True)
+                            <div typed="" class="t-micro-3 is-grey100 hide">DRIVE YOUR
+                                <br/>BUSINESS WITH OUR
+                                <br/>PROFESSIONAL 
+                                <br/> ACCOUNTING EXPERTISE 
+                                <br/>    AND
+                                <br/>   RESOURCES.
+ 
                             </div>
                         </div>
                     </div>
@@ -102,11 +122,11 @@
                 </div>
             </div>
         </div>
-        <div no-click="" class="c-headerNav">
-            <a href="index.html" aria-label="Logo" aria-current="page" class="c-logo-Lnav w-nav-brand w--current">
-                <div class="c-logo-img img-header w-embed">
+        <div class="c-headerNav" style="z-index: 1040;">
+            <a href="index.html" style="cursor: pointer;" aria-label="Logo" aria-current="page" class="c-logo-Lnav w-nav-brand w--current">
+                <a class="c-logo-img img-header w-embed" href="index.html">
                     <img src="media/advenz.svg" height="65em">
-                </div>
+                </a>
             </a>
             <div no-click="" class="c-header-inner">
                 <div click="" class="c-header-nav">
@@ -224,9 +244,13 @@
                         <div class="o-container_title z-index-22">
                             <div class="o-row hm-hero_title margin-80 t-margin">
                                 <div fade="" class="o-col _w-8_title md-w-8 sm-w-24" style="margin-top: 6%;">
-                                    <h1 class="t-display-2_title" >
+                                    <h1 class="t-display-2_title first-title-video" >
                                         Advenz helps businesses to drive  sustainable growth <br>
                                         through our expertise, accuracy, and insights.
+                                    </h1>
+    
+                                    <h1 class="second-title-video">
+                                        Do Business Confidently
                                     </h1>
                                 </div>
                             </div>
@@ -278,8 +302,8 @@
 
                 </section>
                 
-                <div class="c-section hide-tablet" style="height: 100vh">
-                    <iframe class="section_cuatro " src="section4/index.html" ></iframe> 
+                <div class="c-section " style="height: 90vh;">
+                    <iframe class="section_cuatro"  src="section4/index.html" ></iframe> 
                 </div>
 
                 <div logo-dark="" class="c-section stack wf-section" style="margin-top: 2em;">
@@ -972,7 +996,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
         <script>
             let typed = new Typed('[typed]', {
-                strings: ['Class wireless<br>create element()<br>{<br>&nbsp;&nbsp;renderSquare(i) {<br>&nbsp;&nbsp;&nbsp;&nbsp;return &lt;value={i}/&gt;;<br>&nbsp;&nbsp;}<br>}<br>&nbsp;<br>{this.props.value}<br>Return (True)'],
+                strings: ['DRIVE YOUR<br>BUSINESS WITH<br>OUR<br>PROFESSIONAL ACCOUNTING  <br>EXPERTISE AND RESOURCES<br>  DO BUSINESS CONFIDENTLY<br>'],
                 typeSpeed: 15,
                 backSpeed: 0,
                 loop: false,
