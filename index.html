@@ -17,6 +17,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"></script>
         <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css"/>
+        <script>
+            function resizeIframe(obj) {
+              obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+          </script>
     </head>
     <style>
 
@@ -244,13 +249,9 @@
                         <div class="o-container_title z-index-22">
                             <div class="o-row hm-hero_title margin-80 t-margin">
                                 <div fade="" class="o-col _w-8_title md-w-8 sm-w-24" style="margin-top: 6%;">
-                                    <h1 class="t-display-2_title first-title-video" >
+                                    <h1 class="t-display-2_title" >
                                         Advenz helps businesses to drive  sustainable growth <br>
                                         through our expertise, accuracy, and insights.
-                                    </h1>
-    
-                                    <h1 class="second-title-video">
-                                        Do Business Confidently
                                     </h1>
                                 </div>
                             </div>
@@ -302,8 +303,8 @@
 
                 </section>
                 
-                <div class="c-section " style="height: 90vh;">
-                    <iframe class="section_cuatro"  src="section4/index.html" ></iframe> 
+                <div class="c-section " style="height: 100vh;">
+                    <iframe class="section_cuatro"  src="section4/index.html"  frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> 
                 </div>
 
                 <div logo-dark="" class="c-section stack wf-section" style="margin-top: 2em;">
@@ -996,8 +997,8 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
         <script>
             let typed = new Typed('[typed]', {
-                strings: ['DRIVE YOUR<br>BUSINESS WITH<br>OUR<br>PROFESSIONAL ACCOUNTING  <br>EXPERTISE AND RESOURCES<br>  DO BUSINESS CONFIDENTLY<br>'],
-                typeSpeed: 15,
+                strings: ['<span style="font-size:20px">DRIVE YOUR<br>BUSINESS WITH OUR<br>PROFESSIONAL ACCOUNTING  EXPERTISE AND RESOURCES<br>  DO BUSINESS CONFIDENTLY<br></span>'],
+                typeSpeed: 11,
                 backSpeed: 0,
                 loop: false,
                 contentType: 'html',
