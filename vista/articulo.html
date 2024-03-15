@@ -1,0 +1,47 @@
+<div class="page_container">
+				
+    <div class="breadcrumbs">
+<div class="container">
+<ul>
+<li><a href="/">Home</a></li>
+    <li><a href="">Blog</a></li>
+</ul>
+</div>
+</div>
+
+<div id="shopify-section-template-article" class="shopify-section section_template section_template__article"><div class="container">
+<article class="article_item">
+
+<div class="flexible_block flexible_block__overlay">
+
+    <div class="layer_1 img_wrapper__small img_align__center"
+         style="background-image: url( {{art.better_featured_image.source_url}} );"></div>
+
+
+<div class="layer_2">
+    <div>
+        <h1>{{art.title.rendered}}</h1>
+    </div>
+</div>
+</div>
+
+
+<p class="article_info">
+<span>
+<time class="article_time" datetime="2017-04-11T04:45"> {{art.date_gmt | date : "yyyy.MM.dd"}}</time>
+</span>
+
+</p>
+
+<div class="rte article_content">
+    <span style="text-align: left;" ng-bind-html="art.content.rendered"></span> 
+</div>
+
+
+
+</article>
+</div>
+
+</div>
+
+</div>

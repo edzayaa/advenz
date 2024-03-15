@@ -180,7 +180,11 @@ img{border:0;max-width:100%;vertical-align:middle;display:inline-block;}
 }
 .c-logo-link{position:fixed;z-index:500;-webkit-transform:translate(1.25em,.75em);-ms-transform:translate(1.25em,.75em);transform:translate(1.25em,.75em);color:#fafbff;mix-blend-mode:normal;}
 .c-logo-img{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:35%; height: min-content;}
-.c-logo-img img{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-pack:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:15%; height: min-content;}
+.c-logo-img img{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-pack:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:15%; height: auto;}
+
+@media screen and (min-width:479px) and (max-width:991px){
+	.c-logo-img img{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-flex-pack:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:5%; height: auto;}
+}
 
 @media screen and (max-width:991px){
 .c-logo-link{z-index:2000;-webkit-transform:translate(1em,1em);-ms-transform:translate(1em,1em);transform:translate(1em,1em);font-size:13px;}

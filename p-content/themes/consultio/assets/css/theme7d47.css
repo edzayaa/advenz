@@ -25333,7 +25333,7 @@ body .mfp-inline-holder .mfp-content .mfp-close {
   overflow: visible;
 }
 .ct-blog-carousel-layout6 .slick-slide {
-  opacity: 0;
+  opacity: 1;
   margin: 0px 0 50px;
   -webkit-transition: all 300ms linear 0ms;
   -khtml-transition: all 300ms linear 0ms;

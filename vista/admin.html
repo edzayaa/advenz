@@ -1,0 +1,123 @@
+
+  <script>
+    $(document).ready(function() {
+      $("#consultaVentaUser").click();
+
+    })
+  </script>
+  
+    <main >
+      <div class="container">
+        <div class="row">
+          <button id="consultaVentaUser" ng-show="myVar" ng-click="getVentasUser()"></button>
+          <!-- Sidebar-->
+          <div class="sidebar col-xl-3 col-lg-4 sidebar">
+            <div class="block">
+            
+
+            </div>
+          </div>
+          <!-- /Sidebar end-->
+          <!-- Grid -->
+          <div class="products-grid col-xl-9 col-lg-8 sidebar-left">
+            
+            <div class="row">
+
+              <p>Bienvenido a su area de Administración</p>
+
+            </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="" ng-click="tabAdmin(1)" role="tab">Tus compras</a>
+              </li>
+              <!--li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="" role="tab">Second Panel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="" role="tab">Third Panel</a>
+              </li-->
+            </ul><!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Cod. Referencia</th>
+                      <th scope="col">Monto</th>
+                      <th scope="col">Banco</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col">Ver detalle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="vent in ventas">
+                      <th scope="row">1</th>
+                      <td>{{vent.reference}}</td>
+                      <td>{{vent.monto}}</td>
+                      <td>{{vent.banco}}</td>
+                      <td>{{vent.estado}}</td>
+                      <td><i class="fa fa-hand-o-right" ng-click="detalleVentasUser(vent.reference)" aria-hidden="true">Ver</i></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!--div class="tab-pane" id="tabs-2" role="tabpanel">
+                <p>Second Panel</p>
+              </div>
+              <div class="tab-pane" id="tabs-3" role="tabpanel">
+                <p>Third Panel</p>
+              </div-->
+            </div>
+
+            
+          </div>
+          <!-- / Grid End-->
+        </div>
+      </div>
+    </main>
+    <!-- Overview Popup    -->
+    
+
+    <div id="detalleModal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade overview">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"><i class="icon-close"></i></span></button>
+          <div class="modal-body"> 
+            <div class="ribbon-primary text-uppercase">Detalles</div>
+            <div class="row d-flex align-items-center">
+              <div class="image col-lg-12 text-center">
+                <h2>Detalle de tu Compra</h2>
+                
+                <br>
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Cant.</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Imagen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="detal in detalles">
+
+                      <td>{{detal.nombre}}</td>
+                      <td>{{detal.cant}}</td>>
+                      <td>{{detal.precio}}</td>
+                      <td><img src="{{imagenUrl}}{{detal.imagen}}" width="60" alt="product" class="img-fluid"></td>
+                      
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

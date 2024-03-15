@@ -1,0 +1,142 @@
+<style>
+    .inputCarrito{
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        color: #222;
+        border: 1px solid #eee;
+        background: #f7f7f7;
+        background-color: #f7f7f7;
+    }
+    .buttonCarrito{
+        font-weight: 700;
+        padding: 10px 20px;
+        -webkit-transition: .6s;
+        transition: .6s;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: #111;
+    }
+    .buttonCarrito::hover{
+        color: #fff;
+        background-color: #b51d1d;
+    }
+
+</style>
+
+
+<div class="page_container">
+				
+    <div class="breadcrumbs">
+<div class="container">
+<ul>
+<li><a href="/">Incio</a></li>
+
+
+    <li><span>Tu carrito de compras</span></li>
+
+
+</ul>
+</div>
+</div>
+
+
+<div class="template_cart">
+<div class="container">
+<h1 class="page_heading">Podra formalizar su pedido aqui!</h1>
+
+
+<div class="row">
+
+    <div class="col-sm-7">
+        </br>
+        <div class="contact-form-wrapper">
+            <form id="contact-form" name="loginForm" novalidate >
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <input type="text" class="inputCarrito" placeholder="Nombres" ng-model="command.nombres" name="customerName" id="customername" required="">
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <input type="text" class="inputCarrito" placeholder="Apellidos" ng-model="command.apellidos" name="customerName" id="customername" required="">
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <input type="text" class="inputCarrito" placeholder="Correo" ng-model="command.correo" name="customerName" id="customername" required="">
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <input type="text" class="inputCarrito" placeholder="Teléfono" ng-model="command.telefono" name="customerName" id="customername" required="">
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <input type="textarea" class="inputCarrito" placeholder="Dirección" ng-model="command.direccion" name="customerName" id="customername">
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <input type="textarea" class="inputCarrito" placeholder="Mensaje" ng-model="command.mensaje" name="customerName" id="customername">
+                    </div>
+
+                    <p  style="margin-left: 3%; color: #b51d1d;">
+                        Todos los datos son requeridos, llenelo y podra enviar la cotización</br>
+                    </p>
+                    
+                    <div class="col-lg-12">
+                        <button ng-disabled="loginForm.$invalid"  ng-click="crearOrder(command)" type="button" id="submit" class="buttonCarrito"> Realizar la cotización</button>
+                    </div>
+                </div>
+            </form>
+            <p class="form-messege"></p>
+        </div>
+    
+    </div>
+
+    <div class="col-sm-5" style="text-align: justify;">
+        <table class="table table-bordered cart_items">
+            <thead>
+                <tr>
+                    <th class="column_product" colspan="2">Productos en el Carrito</th>
+                    
+                    <th class="column_total">Eiliminar</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                    <tr ng-repeat="prodCart in prodsCart">
+                        <td class="column_product_img">
+                            <a href="">
+                                <img class="cart__image" src="{{prodCart.images[0].src}}">
+                            </a>
+                        </td>
+                        <td class="column_product_info">
+                            <p class="cart_item__name product_name">
+                                <a >{{prodCart.name}}</a>
+                            </p>
+                        </td>
+                        <td class="column_total">
+                            <a ng-click="borrarItemCart(prodCart.id)" class="btn cart_item__remove" href="">Eliminar</a>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+

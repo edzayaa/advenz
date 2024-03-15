@@ -1,0 +1,72 @@
+<div class="page_container">
+				
+    <div class="breadcrumbs">
+<div class="container">
+<ul>
+<li><a href="/">Home</a></li>
+
+
+    
+        <li><span>Blog</span></li>
+    
+
+
+</ul>
+</div>
+</div>
+
+
+<div id="shopify-section-template-blog" class="shopify-section section_template section_template__blog">
+<div class="container">
+<h1 class="page_heading">
+Blog
+<a class="rss_link" href=""><i class="fa fa-rss" aria-hidden="true"></i></a>
+</h1>
+
+
+<div class="blog_listing__main blog_listing__list">
+<div class="row">
+    
+    <div class="col-md-6" ng-repeat="art in posts">
+        <article class="article_item flexible_block flexible_block__normal ">            
+        <div class="layer_1 img_wrapper__medium img_align__center"
+             style="background-image: url({{art.better_featured_image.source_url}} );">
+        </div>
+            <div class="layer_2">
+                <div>
+                    <p class="article_info">
+                        <span>
+                            <time class="article_time" datetime="2017-04-11T04:45">
+                                {{ art.date_gmt | date : "yyyy.MM.dd" }}
+                            </time>
+                        </span>                        
+                    </p>
+
+                    <h3 class="article_title">
+                        <a href="">{{art.title.rendered}}</a>
+                    </h3>
+
+                    <!--div class="rte article_content">
+                            Our company cares about the clients and never lets them down. We are the constant participants of different social and technological researches. Our goods have a great number of different useful and functional options. The products of our store are...
+                    </div-->
+
+                    <a class="btn article_btn " href="" ng-click="verArt(art)">Leer ...</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    
+
+
+
+    
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>

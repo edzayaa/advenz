@@ -1,0 +1,116 @@
+<div class="page_container">
+				
+    <div class="breadcrumbs">
+<div class="container">
+<ul>
+    <li><a href="" ng-click="goHome()">Inicio</a></li>
+    <li><a href="">{{productoName}}</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="shopify-section-template-product" class="shopify-section section section_single-product section_product section_template__product">
+
+
+<div class="product_container">
+<div class="row">
+<div class="single_product__img col-xs-6">
+
+    <img class="primary-image" style="width: 80%" src="{{producto.images[0].src}}" alt="" />
+        
+</div>
+
+<div class="single_product__info col-xs-6 medium">
+<h2 class="single_product__title">{{producto.name}} </h2>
+
+<div class="single_product__details">
+<form data-section="template-product">
+    
+
+    <div class="clearfix"></div>
+    <div class="details_separator"></div>
+
+    <div class="details_wrapper">
+        
+
+        <div class="details_left">
+            <p ng-if="pdf" class="single_product__availability">
+                <b>Ficha Técnica:</b>
+
+                <a href="{{producto.downloads[0].file}}" target="_blank" id="single_product__availability-template-product" class="notify_success">Aqui!</a>
+            </p>
+
+            <div>
+                <h3 >Descripción: </h3> <span ng-bind-html="producto.description"></span> 
+            </div>
+
+            <div class="single_product__quantity">
+                <button ng-click="aggCart(producto)" type="button" name="add" class="btn" id="single_product__addtocart-template-product">Agregar al Carrito</button>
+                
+            </div>
+
+            
+                <div class="social_sharing_block">
+
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100063505755697&mibextid=ZbWKwL" title="Share">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+
+
+
+                <a target="_blank" href="https://instagram.com/proinservi?igshid=NTc4MTIwNjQ2YQ==" title="Share">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+
+
+
+                <a target="_blank" href="https://www.linkedin.com/company/proinservi-s-a/?viewAsMember=true
+                " title="Share">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+                </div>
+                            
+        </div>
+    </div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="container">
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

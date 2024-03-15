@@ -1,0 +1,39 @@
+<div class="page_container">
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><span>Catalogo</span></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div id="shopify-section-template-collections-listing" class="shopify-section section_template section_template__collections-listing">
+		<div class="container">
+			<h1 class="page_heading">Catalogo</h1>
+
+			<div class="row collection_listing__main">
+
+				<div class="col-xs-3" ng-repeat="categoria in categoriasMadres">
+					<div class="collection_item flexible_block flexible_block__normal flexible_block__hover flexible_block__">
+						<a href="" ng-click="goTienda(categoria.id)">
+							<div class="layer_1 collection_img">
+								<div class="img_placeholder__wrap img_placeholder__small" style="background-image: url( {{categoria.image.src}} );     background-size: contain;"></div>
+							</div>
+							<div class="layer_2">
+								<div>
+									<span class="collection_title">{{categoria.name}}</span>
+                            	</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>

@@ -33087,9 +33087,12 @@ body #bbpress-forums .bbp-forum-freshness a:hover {
   padding: 90px 0;
   position: relative;
 }
-@media screen and (max-width: 1199px) {
-  #page.site {
-    overflow: hidden;
+@media screen and (max-width: 767px) {
+  .word{
+    font-size: clamp(12vw,13vw,14vw);
+  }
+  .char{
+    font-size: clamp(12vw,13vw,14vw);
   }
 }
 .single-footer .site-footer-custom {
